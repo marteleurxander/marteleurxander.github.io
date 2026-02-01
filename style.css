@@ -71,11 +71,12 @@ a.page-link {
   font-weight: bold;
 }
 
+/* Video container for normal sections */
 .video-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  margin: 20px 0;
+  margin: 20px 0;          /* spacing above/below */
 }
 
 .video-container iframe {
@@ -86,17 +87,11 @@ a.page-link {
   top: 0;
 }
 
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 ratio */
-  margin: 0;               /* no margin */
-}
-
-.video-container iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
+/* Full-width video section (ignores section max-width) */
+.full-width-video {
+  max-width: 100%;
+  padding: 0 20px;       /* optional padding */
+  margin: 40px auto;
+  border-left: none;     /* remove vertical bar */
+  background: none;      /* transparent so background shows */
 }
