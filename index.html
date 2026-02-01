@@ -1,121 +1,46 @@
-/* Global styles */
-body {
-  font-family: Georgia, "Times New Roman", serif;
-  margin: 0;
-  padding: 0;
-  background: url('images/background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #f8f9fa;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School Debate Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Header */
-header {
-  position: relative;                  /* allows layering of the flag */
-  text-align: center;
-  padding: 80px 20px 40px 20px;
-  background: rgba(0,0,0,0.5);        /* semi-transparent dark overlay */
-  overflow: hidden;                    /* ensures flag doesn’t overflow */
-}
+<header>
+  <h1>School Debate Club</h1>
+  <p>Proferre!</p>
+  <nav>
+    <a class="page-link" href="index.html">Home</a>
+    <a class="page-link" href="about.html">About</a>
+    <a class="page-link" href="meetings.html">Meetings</a>
+    <a class="page-link" href="activities.html">Activities</a>
+    <a class="page-link" href="contact.html">Contact</a>
+  </nav>
+</header>
 
-header h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-  position: relative;                  /* stays above the flag */
-  z-index: 2;
-}
+<section>
+  <h2>Welcome</h2>
+  <p>Welcome to the School Debate Club homepage. Click the links above to explore our club, meetings, activities, and contact information.</p>
+</section>
 
-header p {
-  font-style: italic;
-  position: relative;
-  z-index: 2;
-}
+<section>
+  <h2>Featured News</h2>
+  <p>Latest club events, tournament results, and announcements can be displayed here.</p>
 
-/* US flag behind header text using URL */
-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg') no-repeat center center;
-  background-size: cover;
-  opacity: 0.2;         /* low transparency */
-  z-index: 1;           /* behind the text */
-  pointer-events: none; /* allows clicks to pass through */
-}
+  <div class="news-item">
+    <h3>Startup 2026!</h3>
+    <p>Our startup meeting for the year will be held in Debate Hall, this Thursday.</p>
+    <p>We are going to get on track again, and talk about what we want to do for the upcoming year.</p>
+    <p><strong>When?</strong> Thursday, February.<br>
+       <strong>Where?</strong> Debate Hall, Floor Three.</p>
+  </div>
+</section>
 
-/* Navigation */
-nav {
-  text-align: center;
-  margin: 20px 0;
-  position: relative;
-  z-index: 2;           /* stays above the flag */
-}
+<footer>
+  © School Debate Club
+</footer>
 
-nav a {
-  margin: 0 15px;
-  color: #f8f9fa;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Sections */
-section {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 40px;
-  background: rgba(0,0,0,0.6);
-  border-left: 5px solid #f8f9fa; /* vertical bar on the left */
-}
-
-/* Section headings */
-h2 {
-  border-bottom: 1px solid #f8f9fa;
-  padding-bottom: 5px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  background: rgba(0,0,0,0.5);
-}
-
-/* Page links (navigation) */
-a.page-link {
-  color: #ffd700;
-  font-weight: bold;
-}
-
-/* Video container for normal sections */
-.video-container {
-  position: relative;
-  width: 100%;
-  max-width: 900px;       /* limits width to match section */
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  margin: 20px auto;      /* centers video with spacing */
-}
-
-.video-container iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-
-/* Caption below video */
-.video-caption {
-  text-align: center;
-  font-size: 0.9em;
-  color: #ffd700;        /* matches your links */
-  margin-top: 10px;      /* space above caption */
-  font-style: italic;    /* optional style */
-}
+</body>
+</html>
