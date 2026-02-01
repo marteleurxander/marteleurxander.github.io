@@ -96,3 +96,14 @@ a.page-link {
   margin-top: 10px;      /* space above caption */
   font-style: italic;    /* optional style */
 }
+
+/* US flag behind header text */
+.us-flag {
+  background: url('images/us-flag.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0.2;           /* low transparency */
+  width: 100%;
+  height: 150px;           /* adjust height as needed */
+  margin: 20px 0;          /* space above/below if needed */
+  pointer-events: none;    /* allows clicks to pass through */
+}
