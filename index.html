@@ -1,3 +1,77 @@
+index.html        ← Homepage
+about.html        ← About page
+meetings.html     ← Meetings page
+activities.html   ← Activities page
+contact.html      ← Contact page
+style.css         ← Shared styling
+images/
+    background.jpg ← Background image
+
+/* Global */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f8f9fa;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px 40px 20px;
+  background: rgba(0,0,0,0.5);
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: rgba(0,0,0,0.6);
+  border-left: 5px solid #f8f9fa; /* vertical bar */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  background: rgba(0,0,0,0.5);
+}
+
+/* Section headings */
+h2 {
+  border-bottom: 1px solid #f8f9fa;
+  padding-bottom: 5px;
+}
+
+/* Links */
+a.page-link {
+  color: #ffd700;
+  font-weight: bold;
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,70 +82,68 @@
 </head>
 <body>
 
-  <header>
-    <h1>School Debate Club</h1>
-    <p class="tagline">Think critically. Speak confidently. Debate respectfully.</p>
-  </header>
-
-  <header>
+<header>
   <h1>School Debate Club</h1>
-  <p class="tagline">Think critically. Speak confidently. Debate respectfully.</p>
-  <img src="https://raw.githubusercontent.com/yourusername/yourrepo/main/clubphoto.jpg" 
-       alt="School Debate Club" 
-       style="max-width:100%; height:auto; display:block; margin: 20px auto;">
+  <p>Think critically. Speak confidently. Debate respectfully.</p>
+  <nav>
+    <a class="page-link" href="about.html">About</a>
+    <a class="page-link" href="meetings.html">Meetings</a>
+    <a class="page-link" href="activities.html">Activities</a>
+    <a class="page-link" href="contact.html">Contact</a>
+  </nav>
 </header>
 
-  
-  <nav>
-    <a href="#about">About</a>
-    <a href="#meetings">Meetings</a>
-    <a href="#activities">Activities</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<section>
+  <h2>Welcome</h2>
+  <p>Welcome to the School Debate Club homepage. Click the links above to explore our club, meetings, activities, and contact information.</p>
+</section>
 
-  <main>
-    <section id="about">
-      <h2>About the Club</h2>
-      <p>
-        The School Debate Club is a student-run organization dedicated to
-        developing public speaking, critical thinking, and argumentation skills.
-        We welcome students of all experience levels.
-      </p>
-    </section>
+<section>
+  <h2>Featured News</h2>
+  <p>Latest club events, tournament results, and announcements can be displayed here.</p>
+</section>
 
-    <section id="meetings">
-      <h2>Meeting Information</h2>
-      <ul>
-        <li><strong>Day:</strong> (Add day here)</li>
-        <li><strong>Time:</strong> (Add time here)</li>
-        <li><strong>Location:</strong> (Add room here)</li>
-      </ul>
-    </section>
-
-    <section id="activities">
-      <h2>What We Do</h2>
-      <ul>
-        <li>Practice debates</li>
-        <li>Learn debate formats</li>
-        <li>Public speaking workshops</li>
-        <li>Mock competitions</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Interested in joining? Reach out to us at:
-      </p>
-      <p class="contact">
-        📧 debateclub@school.edu
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© School Debate Club</p>
-  </footer>
+<footer>
+  © School Debate Club
+</footer>
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - School Debate Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>About the Club</h1>
+  <nav>
+    <a class="page-link" href="index.html">Home</a>
+    <a class="page-link" href="meetings.html">Meetings</a>
+    <a class="page-link" href="activities.html">Activities</a>
+    <a class="page-link" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Our Mission</h2>
+  <p>The School Debate Club is dedicated to helping students build critical thinking, public speaking, and respectful argumentation skills.</p>
+</section>
+
+<section>
+  <h2>Who Can Join?</h2>
+  <p>All students are welcome, whether you are a beginner or an experienced debater.</p>
+</section>
+
+<footer>
+  © School Debate Club
+</footer>
+
+</body>
+</html>
+
