@@ -3,7 +3,7 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   margin: 0;
   padding: 0;
-  background: url('images/background.jpg') no-repeat center center fixed;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/4/44/USA_flag_50_stars.svg') no-repeat center center fixed;
   background-size: cover;
   color: #f8f9fa;
   line-height: 1.6;
@@ -11,17 +11,17 @@ body {
 
 /* Header */
 header {
-  position: relative;                  /* allows layering of the flag */
+  position: relative;
   text-align: center;
   padding: 80px 20px 40px 20px;
-  background: rgba(0,0,0,0.5);        /* semi-transparent dark overlay */
-  overflow: hidden;                    /* ensures flag doesn’t overflow */
+  background: rgba(0,0,0,0.5); /* semi-transparent dark overlay */
+  overflow: hidden;
 }
 
 header h1 {
   font-size: 3em;
   margin-bottom: 10px;
-  position: relative;                  /* stays above the flag */
+  position: relative;
   z-index: 2;
 }
 
@@ -41,9 +41,9 @@ header::before {
   height: 100%;
   background: url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg') no-repeat center center;
   background-size: cover;
-  opacity: 0.2;         /* low transparency */
-  z-index: 1;           /* behind the text */
-  pointer-events: none; /* allows clicks to pass through */
+  opacity: 0.2;
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* Navigation */
@@ -51,7 +51,7 @@ nav {
   text-align: center;
   margin: 20px 0;
   position: relative;
-  z-index: 2;           /* stays above the flag */
+  z-index: 2;
 }
 
 nav a {
@@ -71,10 +71,9 @@ section {
   margin: 60px auto;
   padding: 40px;
   background: rgba(0,0,0,0.6);
-  border-left: 5px solid #f8f9fa; /* vertical bar on the left */
+  border-left: 5px solid #f8f9fa;
 }
 
-/* Section headings */
 h2 {
   border-bottom: 1px solid #f8f9fa;
   padding-bottom: 5px;
@@ -88,19 +87,13 @@ footer {
   background: rgba(0,0,0,0.5);
 }
 
-/* Page links (navigation) */
-a.page-link {
-  color: #ffd700;
-  font-weight: bold;
-}
-
-/* Video container for normal sections */
+/* Video container */
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 900px;       /* limits width to match section */
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  margin: 20px auto;      /* centers video with spacing */
+  max-width: 900px;
+  padding-bottom: 56.25%;
+  margin: 20px auto;
 }
 
 .video-container iframe {
@@ -111,11 +104,19 @@ a.page-link {
   top: 0;
 }
 
-/* Caption below video */
+/* Video caption */
 .video-caption {
   text-align: center;
   font-size: 0.9em;
-  color: #ffd700;        /* matches your links */
-  margin-top: 10px;      /* space above caption */
-  font-style: italic;    /* optional style */
+  color: #ffd700;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* News items */
+.news-item {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid #ffd700;
 }
