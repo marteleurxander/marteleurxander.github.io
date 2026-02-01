@@ -87,3 +87,12 @@ a.page-link {
   left: 0;
   top: 0;
 }
+
+/* Caption below video */
+.video-caption {
+  text-align: center;
+  font-size: 0.9em;
+  color: #ffd700;        /* matches your links */
+  margin-top: 10px;      /* space above caption */
+  font-style: italic;    /* optional style */
+}
