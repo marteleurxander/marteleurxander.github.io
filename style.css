@@ -11,24 +11,47 @@ body {
 
 /* Header */
 header {
+  position: relative;                  /* allows layering of the flag */
   text-align: center;
   padding: 80px 20px 40px 20px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.5);        /* semi-transparent dark overlay */
+  overflow: hidden;                    /* ensures flag doesn’t overflow */
 }
 
 header h1 {
   font-size: 3em;
   margin-bottom: 10px;
+  position: relative;                  /* stays above the flag */
+  z-index: 2;
 }
 
 header p {
   font-style: italic;
+  position: relative;
+  z-index: 2;
+}
+
+/* US flag behind header text */
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/us-flag.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0.2;         /* low transparency */
+  z-index: 1;           /* behind the text */
+  pointer-events: none; /* allows clicks to pass through */
 }
 
 /* Navigation */
 nav {
   text-align: center;
   margin: 20px 0;
+  position: relative;
+  z-index: 2;           /* stays above the flag */
 }
 
 nav a {
@@ -95,15 +118,4 @@ a.page-link {
   color: #ffd700;        /* matches your links */
   margin-top: 10px;      /* space above caption */
   font-style: italic;    /* optional style */
-}
-
-/* US flag behind header text */
-.us-flag {
-  background: url('images/us-flag.png') no-repeat center center;
-  background-size: cover;
-  opacity: 0.2;           /* low transparency */
-  width: 100%;
-  height: 150px;           /* adjust height as needed */
-  margin: 20px 0;          /* space above/below if needed */
-  pointer-events: none;    /* allows clicks to pass through */
 }
