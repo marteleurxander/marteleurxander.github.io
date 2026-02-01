@@ -75,8 +75,9 @@ a.page-link {
 .video-container {
   position: relative;
   width: 100%;
+  max-width: 900px;       /* limits width to match section */
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  margin: 20px 0;          /* spacing above/below */
+  margin: 20px auto;      /* centers video with spacing */
 }
 
 .video-container iframe {
@@ -85,13 +86,4 @@ a.page-link {
   height: 100%;
   left: 0;
   top: 0;
-}
-
-/* Full-width video section (ignores section max-width) */
-.full-width-video {
-  max-width: 100%;
-  padding: 0 20px;       /* optional padding */
-  margin: 40px auto;
-  border-left: none;     /* remove vertical bar */
-  background: none;      /* transparent so background shows */
 }
